@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>स्वयंसेवक | Volunteer | शिव योद्धा प्रतिष्ठान, उंब्रज</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+<div class="top-banner">
+  <div class="banner-logo"><img src="images/logo-left.png" alt="Logo" onerror="this.style.display='none'" /></div>
+  <div class="banner-title">
+    <h1>शिव योद्धा प्रतिष्ठान, उंब्रज</h1>
+    <span class="banner-sub">Shiv Yoddha Pratisthan, Umbraj &nbsp;|&nbsp; Est. 2019</span>
+  </div>
+  <div class="banner-logo"><img src="images/logo-right.png" alt="Logo" onerror="this.style.display='none'" /></div>
+</div>
+<nav class="main-nav">
+  <ul>
+    <li><a href="index.html">मुख्य पान</a></li>
+    <li><a href="parichay.html">परिचय</a></li>
+    <li><a href="upakram.html">उपक्रम</a></li>
+    <li><a href="netrutva.html">नेतृत्व संदेश</a></li>
+    <li><a href="samiti.html">समिती</a></li>
+    <li><a href="photo-gallery.html">क्षणचित्रे</a></li>
+    <li><a href="donate.html">देणगी</a></li>
+    <li><a href="volunteer.html" class="active">स्वयंसेवक</a></li>
+    <li><a href="contact.html">संपर्क</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <h2>स्वयंसेवक नोंदणी | Volunteer Registration</h2>
+  <p>शिव योद्धा प्रतिष्ठान, उंब्रज &nbsp;|&nbsp; Shiv Yoddha Pratisthan, Umbraj</p>
+  <div class="hero-breadcrumb"><a href="index.html">मुख्य पान</a> › स्वयंसेवक</div>
+</div>
+
+<section class="section volunteer-form-section">
+  <div class="container">
+    <h2 class="section-title">स्वयंसेवक नोंदणी | Volunteer Registration</h2>
+    <div class="bilingual-stacked center-text" style="max-width:700px; margin:0 auto 36px;">
+      <p class="en">Become a part of Shiv Yoddha Pratisthan Umbraj and contribute towards building a stronger and healthier society in Umbraj surrounding villages and Karad North region. Together we can bring positive change.</p>
+      <p class="mr">शिव योद्धा प्रतिष्ठान उंब्रज सोबत जोडले जाउन उंब्रज, उंब्रज परिसर आणि कराड उत्तर भागात समाजासाठी कार्य करा. आपल्या सहकार्याने समाजात सकारात्मक बदल घडवूया.</p>
+    </div>
+    <div class="form-card">
+      <form onsubmit="handleVolunteer(event)">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="vname">पूर्ण नाव | Full Name *</label>
+            <input type="text" id="vname" name="name" placeholder="आपले नाव लिहा" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="vmobile">भ्रमणध्वनी | Mobile Number *</label>
+            <input type="tel" id="vmobile" name="mobile" placeholder="10-अंकी क्रमांक" required autocomplete="tel" />
+          </div>
+          <div class="form-group">
+            <label for="vemail">ई-मेल | Email</label>
+            <input type="email" id="vemail" name="email" placeholder="email@example.com" autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="vage">वय | Age</label>
+            <input type="number" id="vage" name="age" placeholder="वय नमूद करा" min="15" max="80" />
+          </div>
+          <div class="form-group">
+            <label for="vvillage">गाव / शहर | Village / City *</label>
+            <input type="text" id="vvillage" name="village" placeholder="गाव किंवा शहराचे नाव" required />
+          </div>
+          <div class="form-group">
+            <label for="voccupation">व्यवसाय | Occupation</label>
+            <input type="text" id="voccupation" name="occupation" placeholder="आपला व्यवसाय" />
+          </div>
+          <div class="form-group">
+            <label for="varea">स्वारस्य क्षेत्र | Area of Interest</label>
+            <select id="varea" name="area">
+              <option value="">निवडा</option>
+              <option value="health">आरोग्य सेवा | Healthcare</option>
+              <option value="education">शिक्षण | Education</option>
+              <option value="social">सामाजिक कार्य | Social Work</option>
+              <option value="events">कार्यक्रम | Events</option>
+              <option value="fundraising">निधी संकलन | Fundraising</option>
+              <option value="other">इतर | Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="vavailability">उपलब्धता | Availability</label>
+            <select id="vavailability" name="availability">
+              <option value="">निवडा</option>
+              <option value="weekends">आठवड्याचे शेवटचे दिवस | Weekends</option>
+              <option value="fulltime">पूर्ण वेळ | Full Time</option>
+              <option value="parttime">अंशकालीन | Part Time</option>
+              <option value="events">कार्यक्रमानुसार | Event Based</option>
+            </select>
+          </div>
+          <div class="form-group full-width">
+            <label for="vmessage">संदेश | Message</label>
+            <textarea id="vmessage" name="message" placeholder="आपला संदेश लिहा..."></textarea>
+          </div>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn-primary">नोंदणी करा | Submit Registration</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>शिव योद्धा प्रतिष्ठान, उंब्रज</h4>
+      <p>समाजसेवा | आरोग्य | शिक्षण | संस्कृती</p>
+      <p>स्थापना: २०१९ | Est. 2019</p>
+      <p>उंब्रज, कराड, सातारा, महाराष्ट्र</p>
+    </div>
+    <div class="footer-col">
+      <h4>त्वरित दुवे | Quick Links</h4>
+      <ul>
+        <li><a href="index.html">मुख्य पान</a></li>
+        <li><a href="parichay.html">परिचय</a></li>
+        <li><a href="upakram.html">उपक्रम</a></li>
+        <li><a href="netrutva.html">नेतृत्व संदेश</a></li>
+        <li><a href="photo-gallery.html">क्षणचित्रे</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>आमचे उपक्रम | Our Work</h4>
+      <ul>
+        <li>मोफत आरोग्य शिबिरे</li>
+        <li>मोतीबिंदू ऑपरेशन</li>
+        <li>रक्तदान उपक्रम</li>
+        <li>आभा / आयुष्मान कार्ड</li>
+        <li>दिव्यांग सहाय्य</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>सहभागी व्हा | Get Involved</h4>
+      <ul>
+        <li><a href="donate.html">देणगी द्या</a></li>
+        <li><a href="volunteer.html">स्वयंसेवक व्हा</a></li>
+        <li><a href="contact.html">संपर्क करा</a></li>
+        <li><a href="samiti.html">समिती</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 शिव योद्धा प्रतिष्ठान, उंब्रज. सर्व हक्क राखीव. | All Rights Reserved.</p>
+  </div>
+</footer>
+<script>
+  function handleVolunteer(e) {
+    e.preventDefault();
+    alert('तुमची नोंदणी यशस्वीरित्या स्वीकारली गेली! \nYour registration has been received. We will contact you soon. \nधन्यवाद!');
+    e.target.reset();
+  }
+</script>
+</body>
+</html>

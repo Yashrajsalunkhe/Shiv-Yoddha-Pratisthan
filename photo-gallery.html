@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>क्षणचित्रे | Gallery | शिव योद्धा प्रतिष्ठान, उंब्रज</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    .lightbox-caption-bar { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: #e8d8a0; padding: 10px 20px; text-align: center; font-size: 0.88rem; }
+    .masonry-item { position: relative; }
+    .masonry-item .item-label { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: #e8d890; font-size: 0.74rem; padding: 20px 8px 7px; opacity: 0; transition: opacity 0.3s; }
+    .masonry-item:hover .item-label { opacity: 1; }
+  </style>
+</head>
+<body>
+<div class="top-banner">
+  <div class="banner-logo"><img src="images/logo-left.png" alt="Logo" onerror="this.style.display='none'" /></div>
+  <div class="banner-title">
+    <h1>शिव योद्धा प्रतिष्ठान, उंब्रज</h1>
+    <span class="banner-sub">Shiv Yoddha Pratisthan, Umbraj &nbsp;|&nbsp; Est. 2019</span>
+  </div>
+  <div class="banner-logo"><img src="images/logo-right.png" alt="Logo" onerror="this.style.display='none'" /></div>
+</div>
+<nav class="main-nav">
+  <ul>
+    <li><a href="index.html">मुख्य पान</a></li>
+    <li><a href="parichay.html">परिचय</a></li>
+    <li><a href="upakram.html">उपक्रम</a></li>
+    <li><a href="netrutva.html">नेतृत्व संदेश</a></li>
+    <li><a href="samiti.html">समिती</a></li>
+    <li><a href="photo-gallery.html" class="active">क्षणचित्रे</a></li>
+    <li><a href="donate.html">देणगी</a></li>
+    <li><a href="volunteer.html">स्वयंसेवक</a></li>
+    <li><a href="contact.html">संपर्क</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <h2>क्षणचित्रे | Photo Gallery</h2>
+  <p>शिव योद्धा प्रतिष्ठान, उंब्रज &nbsp;|&nbsp; Shiv Yoddha Pratisthan, Umbraj</p>
+  <div class="hero-breadcrumb"><a href="index.html">मुख्य पान</a> › क्षणचित्रे</div>
+</div>
+
+<div class="page-content">
+  <p style="text-align:center; color:#5a4a28; margin-bottom:28px; font-size:0.96rem;">शिव योद्धा प्रतिष्ठान उंब्रजच्या उपक्रमांचे क्षण | Moments from our activities</p>
+
+  <div class="gallery-filters">
+    <button class="filter-btn active" data-filter="all">सर्व | All</button>
+    <button class="filter-btn" data-filter="events">कार्यक्रम | Events</button>
+    <button class="filter-btn" data-filter="health">आरोग्य शिबिर | Health Camp</button>
+    <button class="filter-btn" data-filter="blood">रक्तदान | Blood Donation</button>
+    <button class="filter-btn" data-filter="cataract">मोतीबिंदू | Cataract</button>
+    <button class="filter-btn" data-filter="divyang">दिव्यांग उपक्रम | Divyang</button>
+    <button class="filter-btn" data-filter="education">शिक्षण | Education</button>
+  </div>
+
+  <div class="masonry-gallery" id="masonryGallery">
+    <div class="masonry-item" data-category="events">
+      <img src="images/gallery/event1.jpg" alt="कार्यक्रम" onerror="this.src='https://placehold.co/400x320/3a3a10/e8c840?text=Event'" />
+      <div class="overlay"><svg viewBox="0 0 24 24"><path d="M12 3l1.5 4.5H18l-3.75 2.73 1.5 4.5L12 12.27 8.25 14.73l1.5-4.5L6 7.5h4.5z"/></svg></div>
+      <div class="item-label">कार्यक्रम | Event</div>
+    </div>
+    <div class="masonry-item" data-category="health">
+      <img src="images/gallery/health1.jpg" alt="आरोग्य शिबिर" onerror="this.src='https://placehold.co/400x500/3a3a10/e8c840?text=Health+Camp'" />
+      <div class="overlay"><svg viewBox="0 0 24 24"><path d="M12 3l1.5 4.5H18l-3.75 2.73 1.5 4.5L12 12.27 8.25 14.73l1.5-4.5L6 7.5h4.5z"/></svg></div>
+      <div class="item-label">आरोग्य शिबिर | Health Camp</div>
+    </div>
+    <div class="masonry-item" data-category="cataract">
+      <img src="images/gallery/cataract1.jpg" alt="मोतीबिंदू" onerror="this.src='https://placehold.co/400x280/3a3a10/e8c840?text=Cataract+Camp'" />
+      <div class="overlay"><svg viewBox="0 0 24 24"><path d="M12 3l1.5 4.5H18l-3.75 2.73 1.5 4.5L12 12.27 8.25 14.73l1.5-4.5L6 7.5h4.5z"/></svg></div>
+      <div class="item-label">मोतीबिंदू ऑपरेशन | Cataract Surgery</div>
+    </div>
+    <div class="masonry-item" data-category="blood">
+      <img src="images/gallery/blood1.jpg" alt="रक्तदान" onerror="this.src='https://placehold.co/400x360/3a3a10/e8c840?text=Blood+Donation'" />
+      <div class="overlay"><svg viewBox="0 0 24 24"><path d="M12 3l1.5 4.5H18l-3.75 2.73 1.5 4.5L12 12.27 8.25 14.73l1.5-4.5L6 7.5h4.5z"/></svg></div>
+      <div class="item-label">रक्तदान | Blood Donation</div>
+    </div>
+    <div class="masonry-item" data-category="divyang">
+      <img src="images/gallery/divyang1.jpg" alt="दिव्यांग उपक्रम" onerror="this.src='https://placehold.co/400x460/3a3a10/e8c840?text=Divyang+Program'" />
+      <div class="overlay"><svg viewBox="0 0 24 24"><path d="M12 3l1.5 4.5H18l-3.75 2.73 1.5 4.5L12 12.27 8.25 14.73l1.5-4.5L6 7.5h4.5z"/></svg></div>
+      <div class="item-label">दिव्यांग उपक्रम | Divyang Initiative</div>
+    </div>
+    <div class="masonry-item" data-category="events">
+      <img src="images/gallery/event2.jpg" alt="कार्यक्रम" onerror="this.src='https://placehold.co/400x340/3a3a10/e8c840?text=Event+2'" />
+      <div class="overlay"><svg viewBox="0 0 24 24"><path d="M12 3l1.5 4.5H18l-3.75 2.73 1.5 4.5L12 12.27 8.25 14.73l1.5-4.5L6 7.5h4.5z"/></svg></div>
+      <div class="item-label">उपक्रम | Program</div>
+    </div>
+    <div class="masonry-item" data-category="health">
+      <img src="images/gallery/health2.jpg" alt="आरोग्य शिबिर" onerror="this.src='https://placehold.co/400x420/3a3a10/e8c840?text=Health+Camp+2'" />
+      <div class="overlay"><svg viewBox="0 0 24 24"><path d="M12 3l1.5 4.5H18l-3.75 2.73 1.5 4.5L12 12.27 8.25 14.73l1.5-4.5L6 7.5h4.5z"/></svg></div>
+      <div class="item-label">आरोग्य शिबिर | Health Camp</div>
+    </div>
+    <div class="masonry-item" data-category="education">
+      <img src="images/gallery/edu1.jpg" alt="शिक्षण" onerror="this.src='https://placehold.co/400x300/3a3a10/e8c840?text=Education'" />
+      <div class="overlay"><svg viewBox="0 0 24 24"><path d="M12 3l1.5 4.5H18l-3.75 2.73 1.5 4.5L12 12.27 8.25 14.73l1.5-4.5L6 7.5h4.5z"/></svg></div>
+      <div class="item-label">शिक्षण विकास | Education</div>
+    </div>
+    <div class="masonry-item" data-category="blood">
+      <img src="images/gallery/blood2.jpg" alt="रक्तदान" onerror="this.src='https://placehold.co/400x380/3a3a10/e8c840?text=Blood+Donation+2'" />
+      <div class="overlay"><svg viewBox="0 0 24 24"><path d="M12 3l1.5 4.5H18l-3.75 2.73 1.5 4.5L12 12.27 8.25 14.73l1.5-4.5L6 7.5h4.5z"/></svg></div>
+      <div class="item-label">रक्तदान शिबिर | Blood Donation Camp</div>
+    </div>
+    <div class="masonry-item" data-category="events">
+      <img src="images/gallery/event3.jpg" alt="कार्यक्रम" onerror="this.src='https://placehold.co/400x490/3a3a10/e8c840?text=Event+3'" />
+      <div class="overlay"><svg viewBox="0 0 24 24"><path d="M12 3l1.5 4.5H18l-3.75 2.73 1.5 4.5L12 12.27 8.25 14.73l1.5-4.5L6 7.5h4.5z"/></svg></div>
+      <div class="item-label">सामाजिक कार्यक्रम | Social Event</div>
+    </div>
+    <div class="masonry-item" data-category="cataract">
+      <img src="images/gallery/cataract2.jpg" alt="मोतीबिंदू" onerror="this.src='https://placehold.co/400x310/3a3a10/e8c840?text=Cataract+2'" />
+      <div class="overlay"><svg viewBox="0 0 24 24"><path d="M12 3l1.5 4.5H18l-3.75 2.73 1.5 4.5L12 12.27 8.25 14.73l1.5-4.5L6 7.5h4.5z"/></svg></div>
+      <div class="item-label">मोफत मोतीबिंदू | Free Cataract Camp</div>
+    </div>
+    <div class="masonry-item" data-category="divyang">
+      <img src="images/gallery/divyang2.jpg" alt="दिव्यांग" onerror="this.src='https://placehold.co/400x400/3a3a10/e8c840?text=Divyang+2'" />
+      <div class="overlay"><svg viewBox="0 0 24 24"><path d="M12 3l1.5 4.5H18l-3.75 2.73 1.5 4.5L12 12.27 8.25 14.73l1.5-4.5L6 7.5h4.5z"/></svg></div>
+      <div class="item-label">कृत्रिम अवयव | Artificial Limbs</div>
+    </div>
+  </div>
+
+  <p style="text-align:center; margin-top:32px; color:#5a4a28; font-size:0.88rem;">
+    📸 अधिक फोटो लवकरच उपलब्ध होतील. | More photos coming soon.<br/>
+    फोटो शेअर करण्यासाठी <a href="contact.html" style="color:#e87722;">संपर्क करा</a>. | To share photos, <a href="contact.html" style="color:#e87722;">contact us</a>.
+  </p>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightboxEl">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
+  <button class="lightbox-nav lightbox-prev" onclick="lightboxNav(-1)" aria-label="Previous">&#8249;</button>
+  <img id="lightboxImg" src="" alt="" />
+  <div class="lightbox-caption-bar" id="lightboxCaption"></div>
+  <button class="lightbox-nav lightbox-next" onclick="lightboxNav(1)" aria-label="Next">&#8250;</button>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>शिव योद्धा प्रतिष्ठान, उंब्रज</h4>
+      <p>समाजसेवा | आरोग्य | शिक्षण | संस्कृती</p>
+      <p>स्थापना: २०१९ | Est. 2019</p>
+      <p>उंब्रज, कराड, सातारा, महाराष्ट्र</p>
+    </div>
+    <div class="footer-col">
+      <h4>त्वरित दुवे | Quick Links</h4>
+      <ul>
+        <li><a href="index.html">मुख्य पान</a></li>
+        <li><a href="parichay.html">परिचय</a></li>
+        <li><a href="upakram.html">उपक्रम</a></li>
+        <li><a href="netrutva.html">नेतृत्व संदेश</a></li>
+        <li><a href="photo-gallery.html">क्षणचित्रे</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>आमचे उपक्रम | Our Work</h4>
+      <ul>
+        <li>मोफत आरोग्य शिबिरे</li>
+        <li>मोतीबिंदू ऑपरेशन</li>
+        <li>रक्तदान उपक्रम</li>
+        <li>आभा / आयुष्मान कार्ड</li>
+        <li>दिव्यांग सहाय्य</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>सहभागी व्हा | Get Involved</h4>
+      <ul>
+        <li><a href="donate.html">देणगी द्या</a></li>
+        <li><a href="volunteer.html">स्वयंसेवक व्हा</a></li>
+        <li><a href="contact.html">संपर्क करा</a></li>
+        <li><a href="samiti.html">समिती</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 शिव योद्धा प्रतिष्ठान, उंब्रज. सर्व हक्क राखीव. | All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+  // FILTER
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const items = document.querySelectorAll('.masonry-item');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      const f = this.dataset.filter;
+      items.forEach(item => {
+        item.style.display = (f === 'all' || item.dataset.category === f) ? '' : 'none';
+      });
+    });
+  });
+
+  // LIGHTBOX
+  let currentIdx = 0;
+  let visibleArr = [];
+  items.forEach(item => {
+    item.style.cursor = 'pointer';
+    item.addEventListener('click', function() { openLightbox(this); });
+  });
+  function openLightbox(el) {
+    visibleArr = Array.from(items).filter(i => i.style.display !== 'none');
+    currentIdx = visibleArr.indexOf(el);
+    showAt(currentIdx);
+    document.getElementById('lightboxEl').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function showAt(idx) {
+    const el = visibleArr[idx];
+    document.getElementById('lightboxImg').src = el.querySelector('img').src;
+    document.getElementById('lightboxCaption').textContent = (el.querySelector('.item-label') || {}).textContent || '';
+  }
+  function lightboxNav(dir) {
+    currentIdx = (currentIdx + dir + visibleArr.length) % visibleArr.length;
+    showAt(currentIdx);
+  }
+  function closeLightbox() {
+    document.getElementById('lightboxEl').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', function(e) {
+    if (!document.getElementById('lightboxEl').classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') lightboxNav(-1);
+    if (e.key === 'ArrowRight') lightboxNav(1);
+  });
+</script>
+</body>
+</html>
