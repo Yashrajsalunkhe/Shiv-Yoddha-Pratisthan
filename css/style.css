@@ -677,7 +677,8 @@ p:last-child { margin-bottom: 0; }
 .bank-table td:first-child { color: var(--gold-light); font-weight: 600; width: 42%; padding-right: 12px; }
 .bank-table td:last-child { color: #e8dfc0; }
 .upi-donate { text-align: center; }
-.qr-box { width: 150px; height: 150px; background: var(--white); border-radius: var(--radius); display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto 16px; color: var(--text-muted); font-size: 0.85rem; border: 2px dashed var(--gold); gap: 6px; }
+.qr-box { width: 168px; height: 168px; background: var(--white); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; padding: 8px; border: 2px solid var(--gold); overflow: hidden; }
+.qr-box img { width: 100%; height: 100%; object-fit: contain; }
 .upi-id { color: var(--gold-light); margin-bottom: 20px; font-size: 0.9rem; }
 .upi-id strong { color: var(--white); }
 
