@@ -239,10 +239,12 @@ p:last-child { margin-bottom: 0; }
 .hero-content {
   position: relative;
   z-index: 3;
+  width: min(100%, 900px);
   max-width: 900px;
   margin: 0 auto;
   padding: 28px 22px;
   background: radial-gradient(ellipse at center, rgba(15,10,4,0.42) 0%, rgba(15,10,4,0.08) 70%, transparent 100%);
+  text-align: center;
 }
 .hero-badge {
   display: inline-block;
@@ -285,7 +287,7 @@ p:last-child { margin-bottom: 0; }
   opacity: 0.9;
   letter-spacing: 0.04em;
 }
-.bilingual-hero { margin-bottom: 32px; }
+.bilingual-hero { margin: 0 auto 32px; max-width: 790px; }
 .bilingual-hero p.en { color: #f0e8d0; font-size: 0.97rem; max-width: 780px; margin: 0 auto 14px; }
 .bilingual-hero p.mr { font-family: 'Tiro Devanagari Marathi', serif; color: #d8c8a0; font-size: 1rem; max-width: 780px; margin: 0 auto; line-height: 2; opacity: 0.9; }
 .hero-cta { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
@@ -823,6 +825,20 @@ p:last-child { margin-bottom: 0; }
 .masonry-item:hover .overlay svg { opacity: 1; }
 
 /* ===========================
+   RECENT INITIATIVES
+=========================== */
+.initiatives-section { background: var(--cream-dark); border-top: 1px solid var(--cream-stone); }
+.initiatives-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 32px; }
+.initiative-card {
+  background: var(--white); border-top: 4px solid var(--saffron); padding: 26px 24px;
+  box-shadow: var(--shadow); border-radius: var(--radius); text-align: left;
+}
+.initiative-icon { font-size: 2rem; margin-bottom: 12px; }
+.initiative-card h3 { color: var(--maroon); font-family: 'Tiro Devanagari Marathi', serif; font-size: 1.05rem; line-height: 1.5; margin-bottom: 12px; }
+.initiative-card p { color: var(--text-muted); font-size: 0.88rem; line-height: 1.75; }
+.initiative-card p.mr { font-family: 'Tiro Devanagari Marathi', serif; }
+
+/* ===========================
    LIGHTBOX
 =========================== */
 .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 9999; align-items: center; justify-content: center; flex-direction: column; }
@@ -1044,6 +1060,10 @@ p:last-child { margin-bottom: 0; }
 @media (max-width: 768px) {
   .hero-section { min-height: 70vh; padding: 72px 16px 90px; }
   .hero-bg { background-position: center 52%; }
+  .hero-content { margin: 0 auto; padding: 24px 8px; text-align: center; }
+  .bilingual-hero { margin-left: auto; margin-right: auto; }
+  .bilingual-hero p.en, .bilingual-hero p.mr { margin-left: auto; margin-right: auto; }
+  .hero-cta { justify-content: center; }
   .top-banner { flex-direction: column; text-align: center; gap: 8px; padding: 12px; }
   .banner-logo { width: 60px; height: 60px; }
   .main-nav ul { justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 4px; scrollbar-width: none; }
@@ -1060,6 +1080,7 @@ p:last-child { margin-bottom: 0; }
   .form-group.full-width { grid-column: span 1; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
   .masonry-gallery { column-count: 2; }
+  .initiatives-grid { grid-template-columns: 1fr; }
   .stat-item { min-width: 50%; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.2); }
   .cta-box { padding: 32px 20px; }
 }
